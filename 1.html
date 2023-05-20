@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<body style="background-color: rgb(53, 56, 50);" <>
+    <title>9ummae</title>
+    <style>
+        /* 전체 페이지 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 네비게이션 스타일 */
+        nav {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* 본문 스타일 */
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            color: #777;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            background-color: #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <h1 style="font-size: 300%;">Welcome</h1>
+            <hr>
+            <p style="font-size: 250%;">Suck Life For You</p>
+            <img src="20230520_235649.png" alt="주먹질 잼민이" width="300pxl" height="200pxl">
+            <form>
+                <label for="username">username:</label>
+                <input type="text" id="username" name="username" placeholder="None"><br>
+
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" placeholder="None"><br>
+
+                <button type="submit">로그인</button>
+
+                <body>
+                    <form>
+                        <!-- 입력''''' 필드들 -->
+                        <button type="submit" onclick="location.href='Account.html'">회원가입</button>
+                        <button type="submit" onclick="location.href='Account.html'">아이디찾기</button>
+                    </form>
+                </body>
+            </form>
+            <!DOCTYPE html>
+            <html>
+
+            <head>
+        </header>
+    </body>
+
+</html>
+<p style="text-align: center;">404 not found</p>
+
+<p style="font-family: Arial, Helvetica, sans-serif;">환영's</p>
+<hr>
+<p><b>주의하세요</b><strong>이곳은 매우</strong><i>위험한 사이트입니다.</i>
+    <em>10초이내로</em><small>사이트를 나가주세요.</small>
+</p>
+<p><del>나가시지 않으실 경우,</del><sub>당신의 컴퓨터에 바이러스가 감염됩니다.</sub>
+<p style="color:red;"><sub>2023/05/20</sub><sup>SEX</sup></p>
+</p>
+<p> <abbr title="HE.IS.FREE">H.I.F</abbr>
+</p>
+<hr>
+<P>상품명:지구 여행</P>
+<P>제작년도:2023/04/18</P>
+<p>가격:500,000,000KRW</p>
+<p style="color: black;"><a href="https://smartstore.naver.com/millennialosaka">상품 구매하기</a></p>
+<img src="UFO.png" alt="얄리얄리 얄라셩" width="150pxl" height="150pxl">
+<hr>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>움직이는 버튼</title>
+    <h3>밀레니얼 오사카와 빠른 배송을 만나보세요.</h3>
+    <style>
+        /* 스타일링 */
+        .container {
+            position: relative;
+            width: 400px;
+            height: 150px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .button {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 50px;
+            background-color: #ff0804;
+            color: #ffffff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            animation: moveButton 3s infinite alternate;
+        }
+
+        @keyframes moveButton {
+            0% {
+                left: 1000;
+            }
+
+            100% {
+                left: 1000px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="button"> 빠른 배송</div>
+    </div>
+</body>
+
+</html>
+<hr>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>숫자 맞추기 게임</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        #guess-input {
+            padding: 10px;
+            width: 10px;
+        }
+
+        #result {
+            margin-top: 18px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>숫자 맞추기 게임</h1>
+
+    <p>1부터 100 사이의 숫자를 맞춰보세요.</p>
+
+    <input type="number" id="guess-input" min="1" max="100">
+    <button onclick="checkGuess()">확인</button>
+
+    <p id="result"></p>
+
+    <script>
+        // 랜덤 숫자 생성
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        function checkGuess() {
+            // 입력값 가져오기
+            const guessInput = document.getElementById("guess-input");
+            const guess = parseInt(guessInput.value);
+
+            // 숫자 비교
+            if (guess === randomNumber) {
+                // 정답일 경우
+                document.getElementById("result").innerHTML = "축하합니다! 정답입니다!";
+                guessInput.disabled = true;
+            } else if (guess < randomNumber) {
+                // 입력값이 더 작을 경우
+                document.getElementById("result").innerHTML = "입력값이 너무 작습니다.";
+            } else {
+                // 입력값이 더 클 경우
+                document.getElementById("result").innerHTML = "입력값이 너무 큽니다.";
+            }
+
+            // 입력값 초기화
+            guessInput.value = "";
+        }
+    </script>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>임의의 숫자 출력</title>
+        <script>
+            function generateNumbers() {
+                const birthYear = parseInt(document.getElementById("birth-year").value);
+                const birthMonth = parseInt(document.getElementById("birth-month").value);
+                const birthDay = parseInt(document.getElementById("birth-day").value);
+
+                const seed = birthYear + birthMonth + birthDay; // 시드값 계산
+
+                const numbers = []; // 임의의 숫자를 저장할 배열
+
+                while (numbers.length < 7) {
+                    const randomNumber = Math.floor(Math.random() * 43) + 1; // 1부터 43 사이의 임의의 숫자 생성
+
+                    if (!numbers.includes(randomNumber)) {
+                        numbers.push(randomNumber); // 중복되지 않는 숫자를 배열에 추가
+                    }
+                }
+
+                const output = document.getElementById("output");
+                output.innerHTML = numbers.join(", "); // 숫자들을 쉼표로 구분하여 출력
+            }
+        </script>
+    </head>
+    <hr>
+
+    <body>
+        <h1>생년월일을 기입하고 행운의 숫자 6개를 받아보세요!</h1>
+
+        <form>
+            <label for="birth-year">년도</label>
+            <input type="number" id="birth-year">
+
+            <label for="birth-month">월</label>
+            <input type="number" id="birth-month">
+
+            <label for="birth-day">일</label>
+            <input type="number" id="birth-day">
+
+            <button type="button" onclick="generateNumbers()">숫자 생성</button>
+        </form>
+
+        <p id="output"></p>
+    </body>
+
+    </html>
+    <hr>
+    <footer>
+        &copy; 2023 9ummae All rights reserved.
+    </footer>
+
+</body>
+
+</html>
